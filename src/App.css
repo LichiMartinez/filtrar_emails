@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #0d4a3f #249780;
+}
+
+body {
+  background-color: #249780;
+  scrollbar-width: thin;
+  scrollbar-color: #0d4a3f #249780;
+}
+
+.pallete {
+  color: #bcfeec, #3eecc9, #31c1a4, #249780, #186f5e, #0d4a3e, #042720;
+}
+
+/* Paleta: #BCFEEC, #3EECC9, #31C1A4, #249780, #186F5E, #0D4A3E, #042720 */
+
+/* FONTS */
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
