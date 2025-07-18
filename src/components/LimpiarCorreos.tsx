@@ -75,38 +75,38 @@ function LimpiarCorreos() {
           />
         </div>
         <div className={style.emails}>
-          <div className={style.emails__filtered}>
-            <h2>Correos electrónicos filtrados:</h2>
-            {correosLimpios.length > 0 && (
+          {correosLimpios.length > 0 && (
+            <div className={style.emails__filtered}>
+              <h2>Correos electrónicos filtrados:</h2>
               <button
                 className={style.emails__button}
                 onClick={copiarCorreosLimpios}
               >
                 Copiar
               </button>
-            )}
-            <ul>
-              {correosLimpios.map((correo, index) => (
-                <li key={index}>{correo}</li>
-              ))}
-            </ul>
-          </div>
-          <div className={style.emails__erased}>
-            <h2>Correos electrónicos eliminados por similitud:</h2>
-            {correosEliminados.length > 0 && (
+              <ul>
+                {correosLimpios.map((correo, index) => (
+                  <li key={index}>{correo}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {correosEliminados.length > 0 && (
+            <div className={style.emails__erased}>
+              <h2>Correos electrónicos eliminados por similitud:</h2>
               <button
                 className={style.emails__button}
                 onClick={copiarCorreosEliminados}
               >
                 Copiar
               </button>
-            )}
-            <ul>
-              {correosEliminados.map((correo, index) => (
-                <li key={index}>{correo}</li>
-              ))}
-            </ul>
-          </div>
+              <ul>
+                {correosEliminados.map((correo, index) => (
+                  <li key={index}>{correo}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>
